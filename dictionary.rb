@@ -22,6 +22,7 @@ class Dictionary
       @dictionary[word][:synonyms].merge(@dictionary[synonym][:synonyms])
       @dictionary[synonym][:synonyms].merge(@dictionary[word][:synonyms])
     end
+    return nil
   end
 
   def lookupWord(word)
