@@ -1,3 +1,9 @@
 # Dictionary
 
-Using Ruby Hash and Set Data stucture, user can add words, definition, and synonyms.
+### Description
+
+Using Ruby Hash and Set Data structure, user can add words, definition, and synonyms.
+
+### Installation Instructions
+
+1. `git clone https://github.com/idannyou/Dictionary.git`
