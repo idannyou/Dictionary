@@ -5,7 +5,7 @@ class Dictionary
   attr_accessor :dictionary
 
   def initialize()
-    @dictionary = Hash.new { |h, k| h[k] = {definition:'', synonyms: Set.new} }
+    @dictionary = Hash.new { |h, k| h[k] = {definition:'', synonyms: Set.new } }
   end
 
   def addWord(word, definition)
@@ -15,13 +15,17 @@ class Dictionary
 
   def addSynonym(word, synonym)
     p @dictionary
-    if @dictionary[word][:synonyms].empty? || @dictionary[synonym][:synonyms].empty?
-      p true
+    if @dictionary[word][:synonyms].empty? && @dictionary[synonym][:synonyms].empty?
       set = Set.new [word, synonym]
       @dictionary[word][:synonyms]=set
       @dictionary[synonym][:synonyms]=set
-    else
-      p false
+    elsif @dictionary[word][:synonyms].empty? && !@dictionary[synonym][:synonyms].empty?
+      @dictionary[synonym][:synonyms].add(word)
+      @dictionary[word][:synonyms] = @dictionary[synonym][:synonyms]
+    elsif !@dictionary[word][:synonyms].empty? && @dictionary[synonym][:synonyms].empty?
+      @dictionary[word][:synonyms].add(synonym)
+      @dictionary[synonym][:synonyms] = @dictionary[word][:synonyms]
+    elsif !@dictionary[word][:synonyms].empty? && !@dictionary[synonym][:synonyms].empty?
       @dictionary[word][:synonyms].merge(@dictionary[synonym][:synonyms])
       @dictionary[synonym][:synonyms].merge(@dictionary[word][:synonyms])
     end
