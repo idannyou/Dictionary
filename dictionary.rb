@@ -5,7 +5,7 @@ class Dictionary
   attr_accessor :dictionary
 
   def initialize()
-    @dictionary = Hash.new { |h, k| h[k] = {definition:''} }
+    @dictionary = Hash.new { |h, k| h[k] = {definition:'', synonyms: Set.new} }
   end
 
   def addWord(word, definition)
@@ -14,14 +14,18 @@ class Dictionary
   end
 
   def addSynonym(word, synonym)
-    if !@dictionary[word][:synonyms]
+    p @dictionary
+    if @dictionary[word][:synonyms].empty? || @dictionary[synonym][:synonyms].empty?
+      p true
       set = Set.new [word, synonym]
       @dictionary[word][:synonyms]=set
       @dictionary[synonym][:synonyms]=set
     else
+      p false
       @dictionary[word][:synonyms].merge(@dictionary[synonym][:synonyms])
       @dictionary[synonym][:synonyms].merge(@dictionary[word][:synonyms])
     end
+
     return nil
   end
 
