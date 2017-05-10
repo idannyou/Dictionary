@@ -1,11 +1,2 @@
-addWord:a:a
-addWord:b:b
-addWord:c:c
-addWord:d:d
-addSynonym:a:b
-addSynonym:c:d
-addSynonym:b:c
-lookupSynonyms:a
-lookupSynonyms:b
-lookupSynonyms:c
-lookupSynonyms:d
+addWord:swag:money or good taken by a thief or burglar
+lookupWord:swag

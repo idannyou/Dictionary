@@ -1,7 +1,1 @@
-#<Set:0x007fe5e882ebc0>
-#<Set:0x007fe5e882e8f0>
-#<Set:0x007fe5e882e8f0>
-a:b,c,d
-b:a,c,d
-c:d,a,b
-d:c,a,b
+swag:money or good taken by a thief or burglar
