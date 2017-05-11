@@ -38,7 +38,8 @@ Commands in `input.txt`:
 {
   "swag" =>
     {
-      :definition => "money or good taken by a thief or burglar", :synonyms => #<Set: {"goods", "swag", "valuables"}>
+      :definition => "money or good taken by a thief or burglar",
+      :synonyms => #<Set: {"goods", "swag", "valuables"}>
     },
     "goods" =>
       {
@@ -55,7 +56,9 @@ Commands in `input.txt`:
 
 Output in `stdout.txt`:
 
-`valuables:goods,swag`<br />
-`swag:goods,valuables`<br />
-`goods:swag,valuables`<br />
-`swag:money or good taken by a thief or burglar`
+```text
+valuables:goods,swag
+swag:goods,valuables
+goods:swag,valuables
+swag:money or good taken by a thief or burglar
+```
