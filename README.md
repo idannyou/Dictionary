@@ -52,3 +52,10 @@ Commands in `input.txt`:
     }
 }
 ```
+
+Output in `stdout.txt`:
+
+`valuables:goods,swag`<br />
+`swag:goods,valuables`<br />
+`goods:swag,valuables`<br />
+`swag:money or good taken by a thief or burglar`
