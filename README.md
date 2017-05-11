@@ -18,3 +18,16 @@ Commands are as follows:
   `addSynonym:word:synonym` - adds 'synonym' to the 'word' <br />
   `lookupSynonyms:word` - look up synonyms for the 'word' <br />
   `lookupWord:word` - look up definition for the 'word' <br />
+
+
+### Example
+
+In `input.txt`
+
+`addWord:swag:money or good taken by a thief or burglar
+addSynonym:goods:swag
+addSynonym:goods:valuables
+lookupSynonyms:valuables
+lookupSynonyms:swag
+lookupSynonyms:goods
+lookupWord:swag`
