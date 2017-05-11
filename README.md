@@ -10,8 +10,11 @@ Using Ruby Hash and Set Data structure, user can add words, definition, and syno
 2. Adding definitions and synonyms is done in `input.txt`.
 3. `ruby main.rb` to run commands in `input.txt`.
 
+### Commands
 
 Commands are as follows:
 
   `addWord:word:definition` - adds/replaces 'definition' to 'word' <br />
-  `addSynonym:word:synonym` - adds 'synonym' to the 'word'
+  `addSynonym:word:synonym` - adds 'synonym' to the 'word' <br />
+  `lookupSynonyms:word` - look up synonyms for the 'word' <br />
+  `lookupWord:word` - look up definition for the 'word' <br />

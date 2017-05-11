@@ -1,3 +1,4 @@
 valuables:goods,swag
 swag:goods,valuables
 goods:swag,valuables
+swag:money or good taken by a thief or burglar

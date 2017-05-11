@@ -4,3 +4,4 @@ addSynonym:goods:valuables
 lookupSynonyms:valuables
 lookupSynonyms:swag
 lookupSynonyms:goods
+lookupWord:swag
