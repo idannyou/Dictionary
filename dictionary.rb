@@ -14,7 +14,6 @@ class Dictionary
   end
 
   def addSynonym(word, synonym)
-    p @dictionary
     if @dictionary[word][:synonyms].empty? && @dictionary[synonym][:synonyms].empty?
       set = Set.new [word, synonym]
       @dictionary[word][:synonyms]=set

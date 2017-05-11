@@ -1,4 +1,6 @@
 addWord:swag:money or good taken by a thief or burglar
 addSynonym:goods:swag
 addSynonym:goods:valuables
-addSynonym:valuables:goods
+lookupSynonyms:valuables
+lookupSynonyms:swag
+lookupSynonyms:goods

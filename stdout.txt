@@ -1,0 +1,3 @@
+valuables:goods,swag
+swag:goods,valuables
+goods:swag,valuables
