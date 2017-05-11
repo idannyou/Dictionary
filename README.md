@@ -13,5 +13,5 @@ Using Ruby Hash and Set Data structure, user can add words, definition, and syno
 
 Commands are as follows:
 
-  `addWord:word:definition` - adds/replace 'definition' to 'word' \n
+  `addWord:word:definition` - adds/replaces 'definition' to 'word' <br />
   `addSynonym:word:synonym` - adds 'synonym' to the 'word'
