@@ -34,6 +34,7 @@ class Dictionary
 
   def lookupWord(word)
     puts "#{word}:#{@dictionary[word][:definition]}"
+    p @dictionary
     return "#{word}:#{@dictionary[word][:definition]}"
   end
 
